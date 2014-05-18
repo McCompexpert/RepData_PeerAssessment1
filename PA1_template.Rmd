@@ -74,6 +74,8 @@ with(clean_activity,interval[avg_by_interval== max(avg_by_interval)])[1]
 
 ```{r Average_nbr_of_steps_per_five_min_interval, fig.width=7, fig.height=6, echo=TRUE}
 plot(clean_activity$interval, clean_activity$avg_by_interval, ylab="Avg nbr steps", xlab="Interval", main="Average nbr of steps per five min interval")
+text(1250, 205, "Interval 835 with the maximum steps",
+     cex = .7)
 
 ```
 

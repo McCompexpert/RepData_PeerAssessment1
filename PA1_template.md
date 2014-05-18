@@ -118,6 +118,7 @@ with(clean_activity, interval[avg_by_interval == max(avg_by_interval)])[1]
 ```r
 plot(clean_activity$interval, clean_activity$avg_by_interval, ylab = "Avg nbr steps", 
     xlab = "Interval", main = "Average nbr of steps per five min interval")
+text(1250, 205, "Interval 835 with the maximum steps", cex = 0.7)
 ```
 
 ![plot of chunk Average_nbr_of_steps_per_five_min_interval](figure/Average_nbr_of_steps_per_five_min_interval.png) 
